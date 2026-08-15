@@ -4,7 +4,7 @@ pipeline {
 	environment {
 		IMAGE_NAME = 'jenkins-docker-chali-cajbon'
 		CONTAINER_NAME = 'jenkins-docker-web'
-		HOST_PORT = '8080'
+		HOST_PORT = '8181'
 		CONTAINER_PORT = '80'
 		IMAGE_TAG = "${BUILD_NUMBER}"
 		FULL_IMAGE_NAME = "${IMAGE_NAME}:${BUILD_NUMBER}"

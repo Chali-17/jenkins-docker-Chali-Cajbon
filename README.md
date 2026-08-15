@@ -24,7 +24,7 @@ Repositorio de práctica para desplegar una página web estática con Nginx, Doc
 docker build -t jenkins-docker-chali-cajbon:1 .
 ```
 
-2. Crear y publicar el contenedor en el puerto 8080.
+2. Crear y publicar el contenedor en el puerto 8181.
 
 ```bash
 docker run -d --name jenkins-docker-web -p 8181:80 jenkins-docker-chali-cajbon:1
@@ -32,7 +32,7 @@ docker run -d --name jenkins-docker-web -p 8181:80 jenkins-docker-chali-cajbon:1
 
 3. Verificar en el navegador.
 
-Abrir http://localhost:8080
+Abrir http://localhost:8181
 
 4. Comprobar el contenedor en ejecución.
 
@@ -82,6 +82,6 @@ git push -u origin main
 
 ## Notas
 
-- La aplicación queda disponible en el puerto 8080 de la máquina local.
+- La aplicación queda disponible en el puerto 8181 de la máquina local.
 - El contenedor se llama jenkins-docker-web.
 - La imagen se etiqueta con el número de ejecución de Jenkins.
