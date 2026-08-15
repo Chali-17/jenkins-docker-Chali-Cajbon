@@ -27,7 +27,7 @@ docker build -t jenkins-docker-chali-cajbon:1 .
 2. Crear y publicar el contenedor en el puerto 8080.
 
 ```bash
-docker run -d --name jenkins-docker-web -p 8080:80 jenkins-docker-chali-cajbon:1
+docker run -d --name jenkins-docker-web -p 8181:80 jenkins-docker-chali-cajbon:1
 ```
 
 3. Verificar en el navegador.
